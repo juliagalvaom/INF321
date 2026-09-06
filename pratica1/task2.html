@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Produtos</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+
+    <header>
+        <h1>Produtos</h1>
+        <p>Utilize o formulário para cadastrar novos itens na loja.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>PRODUTOS</h2>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQmsZsvrI1x0mbQUs3qnwLQGMmW_0EDGaGyfGbbUZumr0PQwTkabc4vU9SJdggAj7qGtkZ-GSynQMMacZ-htNHCHS5l9bODih7gtpQ4LpSBRQ-FOWPscijKXZII2wNeqVOUEljfDRrazpw&usqp=CAc" alt="Notebook">
+                <h3>Notebook Acer</h3>
+                <p><strong>Preço:</strong> R$ 3.500,00</p>
+                <a href="#">Ver Detalhes</a>
+            </div>
+
+            <br>
+
+            <div>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_793645-MLA99963124261_112025-F.webp" alt="Celular">
+                <h3>Samsung S24</h3>
+                <p><strong>Preço:</strong> R$ 2.500,00</p>
+                <a href="#">Ver Detalhes</a>
+            </div>
+
+            <br>
+
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq9OA4rV5TIqfsOMRs8hkYWYwe-DfGwnCOVKgw6ZYhNUDXgxSpyoKmx8s&s=10" alt="Fone Bluetooth">
+                <h3>Fone Bluetooth</h3>
+                <p><strong>Preço:</strong> R$ 90,00</p>
+                <a href="#">Ver Detalhes</a>
+            </div>
+        </section>
+
+        <br>
+
+        <section>
+            <h2>Cadastrar Novo Produto</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome do Produto:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Teclado Mecânico" required><br><br>
+
+                <label for="preco">Preço (R$):</label><br>
+                <input type="number" id="preco" name="preco" step="0.01" placeholder="Ex: 150.00" required><br><br>
+
+                <label for="imagem">Link da Imagem (URL):</label><br>
+                <input type="url" id="imagem" name="imagem" placeholder="https://exemplo.com/imagem.jpg" required><br><br>
+
+                <label for="descricao">Descrição do Produto:</label><br>
+                <input type="text" id="descricao" name="descricao" placeholder="Digite uma breve descrição"><br><br>
+
+                <button type="submit">Cadastrar Novo Produto</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Júlia Matos - 112694</p>
+    </footer>
+
+</body>
+</html>
