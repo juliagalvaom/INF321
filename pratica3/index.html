@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Produtos</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Produtos</h1>
+        <p>Confira nossos produtos e fale conosco.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>PRODUTOS</h2>
+
+            <!-- 2. Campo de busca -->
+            <div class="busca-container">
+                <input type="text" id="campo-busca" placeholder="Digite um produto...">
+                <button id="btn-buscar">Buscar</button>
+            </div>
+
+            <!-- 1. Mensagem exibida ao clicar em "Comprar" -->
+            <p id="mensagem-carrinho" class="mensagem-sucesso escondido">
+                Produto adicionado ao carrinho!
+            </p>
+
+            <div class="produtos-container">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQmsZsvrI1x0mbQUs3qnwLQGMmW_0EDGaGyfGbbUZumr0PQwTkabc4vU9SJdggAj7qGtkZ-GSynQMMacZ-htNHCHS5l9bODih7gtpQ4LpSBRQ-FOWPscijKXZII2wNeqVOUEljfDRrazpw&usqp=CAc" alt="Notebook">
+                    <h3>Notebook Acer</h3>
+                    <p><strong>Preço:</strong> R$ 3.500,00</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_793645-MLA99963124261_112025-F.webp" alt="Celular">
+                    <h3>Samsung S24</h3>
+                    <p><strong>Preço:</strong> R$ 2.500,00</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq9OA4rV5TIqfsOMRs8hkYWYwe-DfGwnCOVKgw6ZYhNUDXgxSpyoKmx8s&s=10" alt="Fone Bluetooth">
+                    <h3>Fone Bluetooth</h3>
+                    <p><strong>Preço:</strong> R$ 90,00</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <!-- 3. Formulário com validação -->
+        <section>
+            <h2>Fale Conosco</h2>
+            <form id="form-contato">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
+                <p class="erro-campo escondido" id="erro-nome">Este campo é obrigatório.</p>
+                <br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail"><br>
+                <p class="erro-campo escondido" id="erro-email">Este campo é obrigatório.</p>
+                <br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea><br>
+                <p class="erro-campo escondido" id="erro-mensagem">Este campo é obrigatório.</p>
+                <br>
+
+                <button type="submit">Enviar Mensagem</button>
+
+                <p id="mensagem-sucesso-form" class="mensagem-sucesso escondido">
+                    Mensagem enviada com sucesso!
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Júlia Matos - 112694</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
